@@ -1,5 +1,5 @@
 
-# 🚀 xWallet - Complete Full-Stack Project
+#  xWallet - Complete Full-Stack Project
 
 <div align="center">
 
