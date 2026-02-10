@@ -30,7 +30,7 @@
     (asserts! (> amount u0) ERR-ZERO-AMOUNT)
     
     ;; Transfer STX from sender to contract BEFORE updating balance
-    (match (stx-transfer? amount sender contract-caller)
+    (match (stx-transfer? amount sender (as-contract tx-sender))
       success (begin
         ;; Update sender's balance
         (map-set balances sender (+ current-balance amount))
